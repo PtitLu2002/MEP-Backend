@@ -1,0 +1,19 @@
+spring:
+  liquibase:
+    enabled: false
+  datasource:
+    url: jdbc:postgresql://database:5432/covid-db
+    username: covid-db
+    password: covid-db
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate.jdbc.lob.non_contextual_creation: true
+    defer-datasource-initialization: true
+    show-sql: true
+    hibernate.ddl-auto: create
+  sql:
+    init.mode: always
+    init.data-locations: classpath:data.sql
+
+polytech.covid.app.jwtSecret: vdhjvfngrhbfjdkc,vnbghrfjkdc,nvfbghrfjikdcfvjhgjfdkfjhgrefjkdsfjhreizoirufk,nvbnvghfjdkfjhreiodkjfhrdkcvjghfk
+polytech.covid.app.jwtExpirationMs: 86400000
