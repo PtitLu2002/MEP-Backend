@@ -99,7 +99,7 @@ node {
 ```
 
 ### Issues
-The pipeline works well until the push stage. I can't push on DockerHub with Jenkins.  
+The pipeline works well until the push stage. I can't push on DockerHub with Jenkins. I have an issue when I try to login.   
 The following error appears :  
 ```
 Docker push failed
